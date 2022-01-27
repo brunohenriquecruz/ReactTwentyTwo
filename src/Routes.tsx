@@ -9,8 +9,10 @@ import { Catalog } from "./pages/Catalog";
 export function AppRoutes(){
     return (
         <Router>
-            <Route path="/cart" element={<Cart/>}/>
-            <Route path="/catalog" element={<Catalog/>}/>
+            <Routes>
+                <Route path="/cart" element={<Cart/>}/>
+                <Route path="/catalog" element={<Catalog/>}/>
+            </Routes>
         </Router>
     )
 }
